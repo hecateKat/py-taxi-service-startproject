@@ -22,7 +22,7 @@ class Car(models.Model):
         ordering = ['manufacturer', 'model']
 
     def __str__(self):
-        return f"{self.manufacturer.name} ({self.manufacturer.country})"
+        return f"{self.manufacturer.name} {self.model} ({self.manufacturer.country})"
 
 
 class Driver(AbstractUser):
